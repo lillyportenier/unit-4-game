@@ -2,16 +2,48 @@
 
 header {
     text-align: center;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: bold;
+    margin: 10px;
 
 }
 body{
+    background-image: url("https://i.pinimg.com/originals/13/13/81/131381e5eed69f6e0b0b970b9d3422d0.jpg");
    
 }
+.number {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#number-to-guess {
+    font-weight: bold;
+    
+}
+.stats {
+    font-size: 25px;
+    text-align: center;
+    border: solid 1.5px slateblue;
+    background: lavender;
+    padding: 20px;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
 
-.puppy-image {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+}
+.images {
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    position: relative;
+    display: inline;
 }
