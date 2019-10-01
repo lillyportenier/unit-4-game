@@ -1,5 +1,7 @@
 var targetNumber = 53;
 var counter = 0;
+var wins = 0;
+var losses = 0;
 
 
 $("#number-to-guess").text(targetNumber);
@@ -18,7 +20,8 @@ for (var i = 0; i < numberOptions.length; i++) {
 
 
 
-$(".puppy-image").on("click", function () {
+    
+    $(".puppy-image").on("click", function () {
     
     var puppyValue = ($(this).attr("data-puppyvalue"));
     puppyValue = parseInt(puppyValue);
@@ -32,6 +35,12 @@ $(".puppy-image").on("click", function () {
         alert("You WIN!!!");
     }
     else if (counter >= targetNumber) {
+        losses++;
+        $("#losses").innerHTML = losses;
         alert("You lost!!");
+        
+
+
     }
 });
+
